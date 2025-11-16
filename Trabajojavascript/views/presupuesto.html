@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>presupuesto </title>
+    <link rel="stylesheet" href="../css.stylos/styles.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="menu container">
+            <img class="logo-1" src="../imagenes/logo.svg">
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="../imagenes/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="/index.html" class="nav-link">Inicio</a></li>
+                        <li><a href="/views/producto.html" class="nav-link">Producto</a></li>
+                        <li><a href="/views/presupuesto.html" class="nav-link active">Presupuesto</a></li>
+                        <li><a href="/views/contacto.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                </div>
+                <img class="logo-2" src="../imagenes/logo.svg" alt="">
+            </nav>
+        </div>
+    </header>
+   
+</body>
+
+</html>
+
+
+
+    <form id="formPresupuesto">
+    <h1>Formulario de Presupuesto</h1>
+
+    <h2>Datos de contacto</h2>
+    <label>Nombre:
+        <input type="text" id="nombre" maxlength="15" />
+        <span class="error" id="errorNombre"></span>
+    </label>
+
+    <label>Apellidos:
+        <input type="text" id="apellidos" maxlength="40" />
+        <span class="error" id="errorApellidos"></span>
+    </label>
+
+    <label>Teléfono:
+        <input type="text" id="telefono" maxlength="9" />
+        <span class="error" id="errorTelefono"></span>
+    </label>
+
+    <label>Email:
+        <input type="email" id="email" />
+        <span class="error" id="errorEmail"></span>
+    </label>
+
+    <h2>Presupuesto</h2>
+
+    <label>Producto:</label>
+    <select id="producto">
+        <option value="0">Seleccione...</option>
+        <option value="200">Web básica - 200€</option>
+        <option value="500">Tienda online - 500€</option>
+        <option value="800">App móvil - 800€</option>
+    </select>
+    <span class="error" id="errorProducto"></span>
+
+    <label>Plazo de entrega (meses):
+        <input type="number" id="plazo" min="1" max="12" />
+        <span class="error" id="errorPlazo"></span>
+    </label>
+
+    <h3>Extras</h3>
+    <div class="extras">
+        <label><input type="checkbox" class="extra" value="50" /> SEO (+50€)</label>
+        <label><input type="checkbox" class="extra" value="100" /> Mantenimiento (+100€)</label>
+        <label><input type="checkbox" class="extra" value="70" /> Hosting (+70€)</label>
+    </div>
+
+    <h2>Precio Final</h2>
+    <div id="precioFinal" class="resultado">0€</div>
+
+    <label>
+        <input type="checkbox" id="condiciones" /> Acepto las condiciones de privacidad
+        <span class="error" id="errorCondiciones"></span>
+    </label>
+
+    <div class="botones">
+        <button type="submit">Enviar</button>
+        <button type="reset">Resetear</button>
+    </div>
+</form>
+
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+    </fieldset>
+    </form>
+</main>
+
+
+
+<footer class="site-footer">
+    <footer class="site-footer footer">
+
+
+        <img src="../imagenes/logo.svg" alt="">
+
+
+        <div class="socials">
+            <a href="#">
+                <div class="social">
+                    <img src="../imagenes/s1.svg" alt="">
+
+                </div>
+            </a>
+            <a href="#">
+                <div class="social">
+                    <img src="../imagenes/s2.svg" alt="">
+
+                </div>
+            </a>
+            <a href="#">
+                <div class="social">
+                    <img src="../imagenes/s3.svg" alt="">
+
+                </div>
+            </a>
+
+            <a href="../imagenes/s1.svg"></a>
+            <a href="../imagenes/s2.svg"></a>
+            <a href="../imagenes/s3.svg"></a>
+        </div>
+
+        <address>Direcion: Calle Bruno Ayyon 15, bajo 4, Madrid,-España.</address>
+        <small>© Tus delicias 2025 - Aviso legal</small>
+    </footer>
+    <script src="../js/script.js"></script>
+
+    </body>
+
+    </html>
