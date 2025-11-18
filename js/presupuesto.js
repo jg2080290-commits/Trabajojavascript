@@ -101,9 +101,6 @@ form.addEventListener("submit", function (e) {
     alert("Debes aceptar las condiciones de privacidad.");
     return;
   }
-
-  validarPrecioFinal()
-
-
+  
   alert("Formulario enviado correctamente ✔");
 });
