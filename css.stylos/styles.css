@@ -11,7 +11,7 @@
 body {
     background-color: #080202;
     font-family: 'Montserrat', sans-serif;
-   
+    padding-bottom: 380px;
 
 }
 
@@ -135,8 +135,8 @@ menu .navbar ul li a:hover {
 
 }
 
-.active{
-    color:#bbbbbb !important;
+.active {
+    color: #bbbbbb !important;
     border-bottom: 1px solid #db241b;
 }
 
@@ -448,21 +448,23 @@ menu .navbar ul li a:hover {
 
 }
 
-.contacto-info{
+.contacto-info {
     color: #fff;
     align-items: center;
     text-align: center;
     margin-bottom: 50px;
     line-height: 1.8;
 }
+
 .contacto-info h2 {
-  text-align: center;
-  align-items: center;
-  margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
 }
 
 .map {
     filter: grayscale(100%)invert(92%)contrast(93%);
+    border: 0;
 
 }
 
@@ -470,12 +472,22 @@ menu .navbar ul li a:hover {
     width: 100%;
     background-color: #000000;
     border-bottom: 5px solid #db241b;
-    padding: 100px 0;
     text-align: center;
-    display: inline-block;
-    text-align: center;
-    justify-content: space-between;
     color: #ffffff;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    height: 250px;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
 }
 
 .links h4 {
@@ -569,6 +581,10 @@ menu .navbar ul li a:hover {
     cursor: pointer;
 }
 
+#mapa {
+    height: 200px;
+}
+
 @media (max-width:991px) {
     .menu {
         padding: 20px;
@@ -609,7 +625,7 @@ menu .navbar ul li a:hover {
     .menu .navbar ul li {
         width: 100%;
     }
- 
+
     #menu:checked~.navbar {
         display: block;
     }
@@ -750,14 +766,16 @@ form {
     background: #fff;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
-   
- 
+
+
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: #333;
     margin-bottom: 15px;
     align-items: center;
@@ -855,24 +873,31 @@ button[type="reset"]:hover {
 
 /* Responsive */
 @media(max-width: 500px) {
-    form { padding: 20px; }
-    .extras label { display: block; margin-bottom: 5px; }
+    form {
+        padding: 20px;
+    }
+
+    .extras label {
+        display: block;
+        margin-bottom: 5px;
+    }
 }
 
 
 
-* Formulario */
-form {
-    background:#db241b;
+* Formulario */ form {
+    background: #db241b;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
     display: flex;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: #db241b;
     margin-bottom: 15px;
 
@@ -972,7 +997,12 @@ button[type="reset"]:hover {
 
 /* Responsive */
 @media(max-width: 500px) {
-    form { padding: 20px; }
-    .extras label { display: block; margin-bottom: 5px; }
-}
+    form {
+        padding: 20px;
+    }
 
+    .extras label {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
